@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ส่วนต่างๆ ของเนื้อวัว - บังซัดเนื้อเป็นมัด</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="bg-danger text-white text-center py-3">
+        <div class="d-flex justify-content-between align-items-center container">
+            <div class="d-flex align-items-center">
+                <img src="pic/Cowlogo.png" alt="โลโก้ร้านบังซัดเนื้อเป็นมัด" class="me-3" height="80">
+                <h1>บังซัดเนื้อเป็นมัด</h1>
+            </div>
+            <nav class="d-flex align-items-center">
+                <a href="index.html" class="text-white mx-3">หน้าแรก</a>
+                <a href="products.html" class="text-white mx-3">สินค้า</a>
+                <a href="about.html" class="text-white mx-3">เกี่ยวกับเรา</a>
+                <a href="contact.html" class="text-white mx-3">ติดต่อ</a>
+                <button class="btn btn-light ms-3" data-bs-toggle="modal" data-bs-target="#cartModal">
+                    🛒 ตะกร้าสินค้า <span id="cart-count" class="badge bg-danger">0</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container py-5">
+        <h2 class="text-center mb-4">สินค้าเพิ่มเติม</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="pic/beef-cuts.webp" alt="แผนภาพส่วนต่างๆ ของเนื้อวัว" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <div class="accordion" id="beefCutsAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingRibeye">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRibeye" aria-expanded="true" aria-controls="collapseRibeye">
+                                Ribeye
+                            </button>
+                        </h2>
+                        <div id="collapseRibeye" class="accordion-collapse collapse show" aria-labelledby="headingRibeye" data-bs-parent="#beefCutsAccordion">
+                            <div class="accordion-body">
+                                เนื้อส่วนซี่โครงที่มีไขมันแทรก เหมาะสำหรับการทำสเต็ก
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSirloin">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSirloin" aria-expanded="false" aria-controls="collapseSirloin">
+                                Sirloin
+                            </button>
+                        </h2>
+                        <div id="collapseSirloin" class="accordion-collapse collapse" aria-labelledby="headingSirloin" data-bs-parent="#beefCutsAccordion">
+                            <div class="accordion-body">
+                                เนื้อส่วนสะโพก เหมาะสำหรับการย่างหรือทำบาร์บีคิว
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingBrisket">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrisket" aria-expanded="false" aria-controls="collapseBrisket">
+                                Brisket
+                            </button>
+                        </h2>
+                        <div id="collapseBrisket" class="accordion-collapse collapse" aria-labelledby="headingBrisket" data-bs-parent="#beefCutsAccordion">
+                            <div class="accordion-body">
+                                เนื้อส่วนอกที่เหมาะสำหรับการต้มและตุ๋นให้นุ่ม
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingChuck">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChuck" aria-expanded="false" aria-controls="collapseChuck">
+                                Chuck
+                            </button>
+                        </h2>
+                        <div id="collapseChuck" class="accordion-collapse collapse" aria-labelledby="headingChuck" data-bs-parent="#beefCutsAccordion">
+                            <div class="accordion-body">
+                                เนื้อส่วนหัวไหล่ ใช้สำหรับทำเนื้อบดหรือตุ๋น
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-danger text-white text-center py-3">
+        <p>© 2025 บังซัดเนื้อเป็นมัด. สงวนลิขสิทธิ์.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
